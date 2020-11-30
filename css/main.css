@@ -24,13 +24,14 @@ h1 {
   margin:0 0 8px;
 }
 
-h2 {
+.section-title {
   font-size :38px;
   color:white;
   text-align:center;
   background-color:#ff6b00;
   opacity:81%;
   margin : 0;
+  padding:6px;
 }
 
 .rectangle3 {
@@ -53,14 +54,50 @@ h2 {
   height:8px;
   opacity:81%;
 }
+h2 {
+  font-size:40px;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.content {
+  display:flex;
+  padding:48px;
+  max-width: 1200px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.bloc image{
+  display:flex;
+  margin-right:auto;
+}
 h3 {
-  /* Default font, size, and margins */
+  font-size:24px;
+  text-align:center;
 }
 
-h4 {
-  /* Default font, size, and margins */
+.p1 {
+  font-size:16px;
+  text-align:justify;
 }
 
+.bloc-image{
+  background-image: url(../img/bg-yellow.png);
+}
+
+.boutonblanc{
+  display:block;
+  color:#fcce00;
+  font-size:20px;
+  text-align:center;
+  border-radius : 15px;
+  border:solid 4px;
+  margin: auto;
+  padding:5px;
+  width:185px;
+  height:48px;
+}
 h5 {
   /* Default font, size, and margins */
 }
