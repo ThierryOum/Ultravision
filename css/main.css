@@ -6,7 +6,7 @@
 */
 
 body {
-  /* Default font family and font color */
+  font-family: 'Poppins', sans-serif;
 }
 
 p, li, textarea, label, input, select {
@@ -16,13 +16,43 @@ p, li, textarea, label, input, select {
 
 
 h1 {
-   /* Default font, size, and margins */
+  font-size:88px;
+  color:white;
+  text-align:center;
+  background-color:#fcce00;
+  opacity:81%;
+  margin:0 0 8px;
 }
 
 h2 {
-  /* Default font, size, and margins */
+  font-size :38px;
+  color:white;
+  text-align:center;
+  background-color:#ff6b00;
+  opacity:81%;
+  margin : 0;
 }
 
+.rectangle3 {
+  background-color:#e02020;
+  margin :8px 0;
+  height :32px;
+  opacity:81%;
+}
+
+.rectangle4 {
+  background-color:#b620e0;
+  margin:8px 0;
+  height:16px;
+  opacity:81%;
+}
+
+.rectangle5 {
+  background-color:#6236ff;
+  margin:8px 0 0;
+  height:8px;
+  opacity:81%;
+}
 h3 {
   /* Default font, size, and margins */
 }
