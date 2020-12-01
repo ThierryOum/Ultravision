@@ -14,8 +14,6 @@ font-size:16px;
   /* Default font size and line height */
 }
 
-
-
 h1 {
   font-size:88px;
   color:white;
@@ -23,6 +21,10 @@ h1 {
   background-color:#fcce00;
   opacity:81%;
   margin:0 0 8px;
+}
+
+.section-title{
+  font-weight:bold;
 }
 
 h2 {
@@ -60,6 +62,7 @@ h4 {
 .sub-title2{
   margin-top:60px;
 }
+
 .rectangle3 {
   background-color:#e02020;
   margin :8px 0;
@@ -95,6 +98,15 @@ h4 {
   display:flex;
   margin-left:auto;
   margin-right:auto;
+}
+
+@media screen and (max-width: 780px) {
+.big-container{
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:720px;
+  }
 }
 
 .big-container2{
@@ -176,14 +188,31 @@ h4 {
   width:185px;
 }
 
+.boutonblanc1:hover {
+  transform:scale(1.1);
+  transition:transform 0.8s;
+}
+
+.boutonblanc2:hover {
+  transform:scale(1.1);
+  transition:transform .8s;
+}
+
+.boutonblanc3:hover {
+  transform:scale(1.1);
+  transition:transform .8s;
+}
+
 .boutonblanc1{
   color:#fcce00;
   margin-right:70px;
+  margin-top:30px;
 }
 
 .boutonblanc2{
   color:#ff6b00;
   margin-right:70px;
+  margin-top:32px;
 }
 
 .boutonblanc3{
@@ -205,11 +234,41 @@ h4 {
 .container-images {
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-gap:32px;
-  padding:32px;
+  grid-gap:34px;
+  padding:20px;
 }
 
+.image-opacity {
+  opacity:19%;
+}
 
+.game{
+  position:relative;
+  text-align:center;
+}
+
+.game-content{
+  position:absolute;
+  top:16px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  font-size:14px;
+  color:white;
+  margin-bottom:6px;
+}
+
+.game-title{
+  font-size:32px;
+  font-weight:bold;
+  color:#fcce00;
+  margin-bottom:32px;
+}
+
+.game-description{
+  font-size:16px;
+  color:white;
+}
 
 a {
   /* Link color */
