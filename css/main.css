@@ -69,6 +69,12 @@ h4 {
   margin :8px 0;
   height :32px;
   opacity:81%;
+  transition:background-color 1s;
+}
+
+.rectangle3:hover{
+  background-color:white;
+  color:#e02020;
 }
 
 .rectangle4 {
@@ -76,6 +82,12 @@ h4 {
   margin:8px 0;
   height:16px;
   opacity:81%;
+  transition:background-color 1s;
+}
+
+.rectangle4:hover{
+  background-color:white;
+  color:#b620e0;
 }
 
 .rectangle5 {
@@ -83,6 +95,12 @@ h4 {
   margin:8px 0 0;
   height:8px;
   opacity:81%;
+  transition:background-color 1s;
+}
+
+.rectangle5:hover{
+  background-color:white;
+  color:#6236ff;
 }
 
 .titre-overlay{
@@ -111,7 +129,23 @@ h4 {
   opacity:81%;
   margin : 0;
   padding:6px;
+  transition:background-color 1s;
 }
+
+.section-title:hover{
+  background-color:white;
+  color:#ff6b00;
+}  
+
+.title{
+  transition:background-color 1s;
+}
+
+.title:hover{
+  background-color:white;
+  color:#fcce00;
+}
+
 
 .big-container{
   display:flex;
@@ -128,7 +162,6 @@ h4 {
 .content, .bloc-image, .content2, .bloc-image2 {
   flex-basis : 320px;
   flex-grow: 1;
- 
 } 
 
 .bloc-image{
@@ -137,7 +170,6 @@ h4 {
   background-size:auto 100%;
   display:flex;
 }
-
 
 @media screen and (max-width:1200px){
   .bloc-image{
@@ -278,7 +310,7 @@ h4 {
   font-size:40px;
   text-align:center;
   font-weight:bold;
-  padding:48px;
+  padding-top:48px;
 }
 .container-images {
   display:grid;
@@ -310,10 +342,11 @@ h4 {
 .game{
   position:relative;
   text-align:center;
+  
 }
 
 .img-game{
-max-width:80%
+max-width:80%;
 }
 
 .game-content{
@@ -328,6 +361,18 @@ max-width:80%
   max-width:80%;
   margin-right:auto;
   margin-left:auto;
+  border-radius:4%;
+}
+
+.game-content {
+  opacity:0;
+  transform: translateY(10px);
+  transition: 800ms transform ease-in-out, 200ms opacity;
+}
+
+.game:hover .game-content{
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .game-title{
@@ -342,87 +387,57 @@ max-width:80%
   color:white;
 }
 
-.game-content {
-  opacity:0;
-  transform: translateY(10px);
-  transition: 800ms transform ease-in-out, 200ms opacity;
-}
-
-.game:hover .game-content{
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 .contact{
-   font-size:40px;
-   color:white;
-   display:block;
-   text-align:center;
-   margin-top:30px;
-   margin-bottom:30px;
-   font-weight:bold;
+  font-size:300%;
+  color:white;
+  display:block;
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:30px;
+  font-weight:bold;
 }
 
 form {
-  margin: 0 auto;
-  width: 400px;
-  padding: 1em;
-  border: 1px solid white;
-  border-radius: 1em;
+ margin: 0 auto;
+ width: 400px;
+ padding: 1em;
+ border: 1px solid white;
+ border-radius: 1em;
 }
 
 form div {
-  margin-top: 2em;
+ margin-top: 2em;
 }
 
 label {
-  color:white;
-  display: inline-block;
-  width: 150px;
-  text-align: left;
+ color:white;
+ display: inline-block;
+ width: 150px;
+ text-align: left;
+ font-size:150%;
+}
+
+input {
+  height:25px;
 }
 
 input, textarea {
-  font: 1em sans-serif;
-  width: 350px;
-  box-sizing: border-box;
-  border: 1px solid #999;
+ font: 1em sans-serif;
+ width: 350px;
+ box-sizing: border-box;
+ border: 1px solid #999;
 }
 
 input:focus, textarea:focus {
-  border-color: white;
+ border-color: white;
 }
 
 textarea {
-  vertical-align: top;
-  height: 5em;
+ vertical-align: top;
+ height: 5em;
 }
 
 .button {
-  padding-left: 100px;
-  height:2em;
+ padding-left: auto;
+ height:3em;
 }
-
-a {
-  /* Link color */
-}
-
-a:hover {
-  /* Link color on mouse over */
-}
-
-
-/**
-* ------
-* Layout
-* ------
-*/
-
-
-
-
-/**
-* ----------
-* Components
-* ----------
-*/
